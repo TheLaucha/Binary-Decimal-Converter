@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary to decimal</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:wght@200;300;500;700&family=M+PLUS+1+Code:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="convert-container">
+        <h1 class="title">Binary to decimal Converter</h1>
+        <form id="binary-form">
+          <label for="binary">Binary input</label>
+          <input type="number" name="binary" id="binary" placeholder="10101" />
+          <button type="submit" class="convertBtnBinary">Convert</button>
+        </form>
+        <div class="error-message"></div>
+        <div class="output-decimal">
+          <p class="output-text">Decimal output</p>
+          <div class="decimal-output-box"></div>
+        </div>
+        <button class="resetBtnBinary">Reset</button>
+      </div>
+      <div class="convert-container">
+        <h1 class="title">Decimal to binary Converter</h1>
+        <form id="decimal-form">
+          <label for="binary">Decimal input</label>
+          <input type="number" name="decimal" id="decimal" placeholder="21" />
+          <button type="submit" class="convertBtnDecimal">Convert</button>
+        </form>
+        <div class="error-message"></div>
+        <div class="output-binary">
+          <p class="output-text">Binary output</p>
+          <div class="binary-output-box"></div>
+        </div>
+        <button class="resetBtnDecimal">Reset</button>
+      </div>
+    </div>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
